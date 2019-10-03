@@ -1,0 +1,56 @@
+body { 			/* establecemos el fondo de color verde claro*/
+background-color: lightgreen; 
+}
+
+body > div {		/*centramos nuestro mapa del juego*/
+	margin: 120px auto;
+	text-align: center;
+}
+/*cada figura de nuetro juego debe medir 50x50 px*/
+.tile{		/*con este class establecemos el tamaño de cada figura*/
+	width: 50px;
+	height: 50px;
+
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pared{		/*le  colocamos una imagen de una pared de 50x50 px de color azul*/
+	background-image: url('../imagenes/wall.png');
+}
+.moneda{		/*achicamos la dimencion redondiando las esquinas y le pusimos color amarrilo*/
+	background-color: yellow;
+	border-radius: 50%;
+	transform: scale(0.3); 
+}
+
+.pacman{   /*indicamos la direccion de la imagen de nuestro pacman mirando hacia la derecha*/
+	background-image: url('../imagenes/derecha.png');
+}
+/*se van a establecer las otras direcciones hacia donde mire el pacman para poder crar una ilucion al momento de jugar*/
+.izquierda{
+	background-image: url('../imagenes/izquierda.png');
+}
+.abajo{
+	background-image: url('../imagenes/abajo.png');
+}
+.arriba{
+	background-image: url('../imagenes/arriba.png');
+}
+/*indicamos la direccion de las imagenes de los fantasmas*/
+.fantasma{
+	background-image: url('../imagenes/fantasma4.gif');
+}
+.fantasma1{
+	background-image: url('../imagenes/fantasma1.gif');
+}
+.fantasma2{
+	background-image: url('../imagenes/fantasma2.gif');
+}
+.fantasma3{
+	background-image: url('../imagenes/fantasma3.gif');
+}
+/*indicamos la direccion de la imagen cereza*/
+.cereza{
+	background-image: url(../imagenes/cereza.png);
+}
